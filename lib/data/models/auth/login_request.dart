@@ -1,0 +1,37 @@
+
+
+class LoginRequest {
+  const LoginRequest({
+    required this.email,
+    required this.password,
+  });
+
+  final String email;
+  final String password;
+
+  Map<String, dynamic> toJson() {
+    return {
+      "email": email,
+      "password": password,
+    };
+  }
+
+  factory LoginRequest.fromJson(
+    Map<String, dynamic> json,
+  ) {
+    return LoginRequest(
+      email: json["email"] ?? "",
+      password: json["password"] ?? "",
+    );
+  }
+
+  LoginRequest copyWith({
+    String? email,
+    String? password,
+  }) {
+    return LoginRequest(
+      email: email ?? this.email,
+      password: password ?? this.password,
+    );
+  }
+}
