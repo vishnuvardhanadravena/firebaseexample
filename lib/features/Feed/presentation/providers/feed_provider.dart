@@ -6,8 +6,7 @@ import '../../domain/repositories/feed_repository.dart';
 enum FeedStatus { initial, loading, loaded, error }
 
 class FeedProvider extends ChangeNotifier {
-  FeedProvider({required FeedRepository repository})
-      : _repository = repository;
+  FeedProvider({required this._repository});
 
   final FeedRepository _repository;
 

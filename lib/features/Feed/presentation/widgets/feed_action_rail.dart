@@ -1,4 +1,4 @@
-import 'package:firebaseexample/core/utils/formatter.dart';
+import 'package:flavor/core/utils/formatter.dart';
 import 'package:flutter/material.dart';
 
 
@@ -83,7 +83,7 @@ class _RailButton extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Material(
-          color: Colors.white.withOpacity(0.16),
+          color: Colors.white.withValues(alpha: 0.16),
           shape: const CircleBorder(),
           clipBehavior: Clip.antiAlias,
           child: InkWell(

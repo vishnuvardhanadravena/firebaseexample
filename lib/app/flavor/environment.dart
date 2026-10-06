@@ -1,13 +1,10 @@
-enum Environment { dev, stg, qa, prod }
+enum Environment { dev, qa, prod }
 
 extension EnvironmentExtension on Environment {
   String get name {
     switch (this) {
       case Environment.dev:
         return "DEV";
-
-      case Environment.stg:
-        return "STG";
 
       case Environment.qa:
         return "QA";

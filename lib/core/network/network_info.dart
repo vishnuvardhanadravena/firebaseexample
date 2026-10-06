@@ -123,10 +123,9 @@ abstract interface class NetworkInfo {
 
 class NetworkInfoImpl implements NetworkInfo {
   NetworkInfoImpl({
-    required Connectivity connectivity,
+    required this._connectivity,
     required InternetConnection internetConnection,
-  })  : _connectivity = connectivity,
-        _internetConnection = internetConnection;
+  })  : _internetConnection = internetConnection;
 
   final Connectivity _connectivity;
 

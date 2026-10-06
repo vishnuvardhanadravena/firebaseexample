@@ -3,6 +3,7 @@
 /// Usage:
 /// return ApiResponse.success(data);
 /// return ApiResponse.failure("Something went wrong");
+library;
 
 class ApiResponse<T> {
   const ApiResponse._({

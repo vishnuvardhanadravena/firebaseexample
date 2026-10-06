@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'environment.dart';
 import 'flavor.dart';
 
@@ -23,17 +22,6 @@ class FlavorConfig {
         );
         break;
 
-      case Environment.stg:
-        _flavor = const Flavor(
-          environment: Environment.stg,
-          appName: "My App STG",
-          baseUrl: "https://stg-api.company.com",
-          enableLogs: true,
-          showBanner: true,
-          bannerColor: Colors.orange,
-        );
-        break;
-
       case Environment.qa:
         _flavor = const Flavor(
           environment: Environment.qa,
@@ -44,7 +32,6 @@ class FlavorConfig {
           bannerColor: Colors.blue,
         );
         break;
-
       case Environment.prod:
         _flavor = const Flavor(
           environment: Environment.prod,
@@ -59,10 +46,7 @@ class FlavorConfig {
   }
 
   static bool get isDev => instance.environment == Environment.dev;
-
-  static bool get isStg => instance.environment == Environment.stg;
-
+  // static bool get isStg => instance.environment == Environment.stg;
   static bool get isQa => instance.environment == Environment.qa;
-
   static bool get isProd => instance.environment == Environment.prod;
 }

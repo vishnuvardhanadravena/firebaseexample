@@ -2,10 +2,9 @@ import 'package:dio/dio.dart';
 
 class AuthInterceptor extends Interceptor {
   AuthInterceptor({
-    required Future<String?> Function() tokenProvider,
+    required this._tokenProvider,
     required Future<void> Function()? onUnauthorized,
-  })  : _tokenProvider = tokenProvider,
-        _onUnauthorized = onUnauthorized;
+  })  : _onUnauthorized = onUnauthorized;
 
   final Future<String?> Function() _tokenProvider;
 

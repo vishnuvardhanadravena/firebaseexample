@@ -1,9 +1,8 @@
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:firebaseexample/core/network/network_info.dart';
-import 'package:firebaseexample/core/services/stripe_service.dart';
+import 'package:flavor/core/network/network_info.dart';
+import 'package:flavor/core/services/stripe_service.dart';
 import 'package:flutter/material.dart';
-
 import '../../core/di/injection.dart';
 import '../../core/services/firebase_service.dart';
 import '../../core/services/notification_service.dart';
@@ -18,7 +17,7 @@ Future<void> bootstrap({
   await setupDependencies();
   await getIt<NetworkInfo>().initialize();
   FlavorConfig.initialize(environment);
-  if (environment == Environment.stg) {
+  if (environment == Environment.qa) {
     await StripeService.instance.initialize();
   } else {}
   await FirebaseService.initialize();

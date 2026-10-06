@@ -1,4 +1,4 @@
-import 'package:firebaseexample/core/utils/logger.dart';
+import 'package:flavor/core/utils/logger.dart';
 import 'package:flutter/material.dart';
 import 'package:in_app_update/in_app_update.dart';
 
@@ -18,9 +18,6 @@ import 'package:in_app_update/in_app_update.dart';
 //   }
 // }
 
-
-
-
 class UpdateScreen extends StatefulWidget {
   const UpdateScreen({super.key});
 
@@ -31,7 +28,7 @@ class UpdateScreen extends StatefulWidget {
 class _UpdateScreenState extends State<UpdateScreen> {
   AppUpdateInfo? _updateInfo;
 
-  GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
 
   bool _flexibleUpdateAvailable = false;
 
@@ -40,7 +37,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
     InAppUpdate.checkForUpdate()
         .then((info) {
           setState(() {
-            AppLogger.debug("====>${info}");
+            AppLogger.debug("====>$info");
             _updateInfo = info;
           });
         })

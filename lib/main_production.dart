@@ -1,4 +1,4 @@
-import 'package:firebaseexample/app.dart';
+import 'package:flavor/app.dart';
 
 import 'app/flavor/bootstrap.dart';
 import 'app/flavor/environment.dart';

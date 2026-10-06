@@ -1,5 +1,5 @@
-import 'package:firebaseexample/app/flavor/environment.dart';
-import 'package:firebaseexample/app/flavor/flavor_config.dart';
+import 'package:flavor/app/flavor/environment.dart';
+import 'package:flavor/app/flavor/flavor_config.dart';
 
 class ApiConstants {
   ApiConstants._();
@@ -12,10 +12,6 @@ class ApiConstants {
     switch (FlavorConfig.instance.environment) {
       case Environment.dev:
         return "https://dev-api.company.com";
-
-      case Environment.stg:
-        return "https://stg-api.company.com";
-
       case Environment.qa:
         return "https://qa-api.company.com";
 

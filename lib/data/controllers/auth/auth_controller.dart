@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/network/api_response.dart';
 import '../../models/auth/login_request.dart';
 import '../../models/auth/login_response.dart';
 import '../../repositories/auth_repository.dart';

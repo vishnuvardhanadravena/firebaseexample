@@ -1,6 +1,6 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:firebaseexample/data/controllers/auth/auth_controller.dart';
-import 'package:firebaseexample/core/database/secure_storage_service.dart';
+import 'package:flavor/data/controllers/auth/auth_controller.dart';
+import 'package:flavor/core/database/secure_storage_service.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';

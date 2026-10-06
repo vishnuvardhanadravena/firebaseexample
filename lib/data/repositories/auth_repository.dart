@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:firebaseexample/core/database/secure_storage_service.dart';
+import 'package:flavor/core/database/secure_storage_service.dart';
 
 import '../../core/constants/api_constants.dart';
 import '../../core/network/api_response.dart';

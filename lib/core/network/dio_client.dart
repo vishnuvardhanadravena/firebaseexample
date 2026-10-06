@@ -1,8 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:firebaseexample/core/constants/api_constants.dart';
-import 'package:firebaseexample/core/network/auth_interceptor.dart';
-import 'package:firebaseexample/core/network/dio_interceptor.dart';
-import 'package:firebaseexample/core/network/logger_interceptor.dart';
+import 'package:flavor/core/constants/api_constants.dart';
+import 'package:flavor/core/network/auth_interceptor.dart';
+import 'package:flavor/core/network/dio_interceptor.dart';
+import 'package:flavor/core/network/logger_interceptor.dart';
+
 
 class DioClient {
   DioClient({

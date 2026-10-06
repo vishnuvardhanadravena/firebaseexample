@@ -1,15 +1,17 @@
-import 'package:firebaseexample/app/flavor/flavor_banner.dart';
-import 'package:firebaseexample/app/flavor/flavor_config.dart';
-import 'package:firebaseexample/core/constants/api_constants.dart';
-import 'package:firebaseexample/core/network/network_info.dart';
-import 'package:firebaseexample/core/di/injection.dart';
-import 'package:firebaseexample/core/theme/app_theme.dart';
-import 'package:firebaseexample/features/Animations/animations.dart';
-import 'package:firebaseexample/features/GoogeMaps/google_maps.dart';
-import 'package:firebaseexample/features/Feed/feed_module.dart';
-import 'package:firebaseexample/features/AppUpadate/app_update.dart';
+  
+  
+  
+  import 'package:flavor/app/flavor/flavor_banner.dart';
+import 'package:flavor/app/flavor/flavor_config.dart';
+import 'package:flavor/core/constants/api_constants.dart';
+import 'package:flavor/core/network/network_info.dart';
+import 'package:flavor/core/di/injection.dart';
+import 'package:flavor/core/theme/app_theme.dart';
+import 'package:flavor/features/Animations/animations.dart';
+import 'package:flavor/features/GoogeMaps/google_maps.dart';
+import 'package:flavor/features/Feed/feed_module.dart';
+import 'package:flavor/features/AppUpadate/app_update.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

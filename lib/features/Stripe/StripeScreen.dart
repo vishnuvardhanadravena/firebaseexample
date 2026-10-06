@@ -1,4 +1,4 @@
-import 'package:firebaseexample/core/services/stripe_service.dart';
+import 'package:flavor/core/services/stripe_service.dart';
 import 'package:flutter/material.dart';
 
 class StripeScreen extends StatefulWidget {
